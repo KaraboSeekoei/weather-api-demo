@@ -22,7 +22,8 @@ import requests  # Library for making HTTP requests (API calls)
 cities = {
     "johannesburg": (-26.2041, 28.0473),
     "cape town": (-33.9249, 18.4241),
-    "durban": (-29.8587, 31.0218)
+    "durban": (-29.8587, 31.0218),
+    "welkom": (-27.9868, 26.7558),
 }
 
 # --------------------------------------------
@@ -84,7 +85,7 @@ def get_weather(latitude, longitude):
 if __name__ == "__main__":
     # Ask the user for a city name
     # .strip() removes extra spaces, .lower() ensures it matches our dictionary keys
-    city_input = input("Enter a city (Johannesburg, Cape Town, Durban): ").strip().lower()
+    city_input = input("Enter a city (Welkom, Johannesburg, Cape Town, Durban): ").strip().lower()
 
     # Check if the city is in our dictionary
     if city_input in cities:
